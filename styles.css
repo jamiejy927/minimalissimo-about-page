@@ -8,6 +8,8 @@ body{
   font-family:'Montserrat', sans-serif;
   font-weight:200;
   font-size:1.2em;
+
+  margin-bottom:500px;
 }
 
 /* ===== HEADER ===== */
@@ -124,4 +126,19 @@ body{
   margin-left:30px;
   margin-top:20px;
   list-style:square;
+}
+
+/* ===== FOOTER ===== */
+
+.footer{
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  border-bottom:1px solid black;
+}
+
+.footer-text{
+  padding:30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
