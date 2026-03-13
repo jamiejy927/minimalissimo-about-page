@@ -18,8 +18,6 @@ body{
   border:1px solid black;
 }
 
-/* logo */
-
 .logo{
   padding:30px;
   border-right:1px solid black;
@@ -47,7 +45,6 @@ body{
   border-right:none;
 }
 
-
 /* ===== HERO ===== */
 
 .hero{
@@ -71,26 +68,60 @@ body{
 .content{
   display:grid;
   grid-template-columns:1fr 2fr;
-  border-bottom:1px solid black;
-  /* padding: 2rem 4rem; */
+  /* border-bottom:1px solid black; */
 }
 
 .left{
   border-right:1px solid black;
+  /* border-bottom:none; */
 }
 
 .text{
   padding:40px;
-  /* line-height:1.6; */
+  border-bottom:1px solid black;
 }
-
-/* .text p{
-  margin-bottom:20px;
-} */
 
 .text ul{
   margin-left:30px;
   list-style:square;
-  /* margin-top:20px; */
-  /* margin-bottom:20px; */
+}
+
+/* ===== NOTICE ===== */
+
+.notice{
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  /* border-bottom:1px solid black; */
+}
+
+.notice-text{
+  padding:30px 0px 30px 40px;
+  display:flex;
+  align-items:center;
+  border-bottom:1px solid black;
+}
+
+/* ===== FEATURES COST ===== */
+
+.features-cost{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  /* border-bottom:1px solid black; */
+}
+
+.features{
+  padding:40px;
+  border-right:1px solid black;
+  border-bottom:1px solid black;
+}
+
+.cost{
+  padding:40px;
+  border-bottom:1px solid black;
+}
+
+.features ul{
+  margin-left:30px;
+  margin-top:20px;
+  list-style:square;
 }
