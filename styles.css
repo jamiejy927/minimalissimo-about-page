@@ -18,6 +18,11 @@ body{
   display:grid;
   grid-template-columns:1fr 2fr;
   border:1px solid black;
+
+  position:fixed;
+  top:0;
+  width:100%;
+  background:white;
 }
 
 .logo{
@@ -56,12 +61,14 @@ body{
   justify-content:center;
   align-items:center;
 
+  border-left:1px solid black;
+  border-right:1px solid black;
   border-bottom:1px solid black;
 }
 
 .hero h1{
   font-size:18px;
-  font-weight:300;
+  font-weight:200;
   letter-spacing:1px;
 }
 
@@ -70,12 +77,12 @@ body{
 .content{
   display:grid;
   grid-template-columns:1fr 2fr;
-  /* border-bottom:1px solid black; */
+  border-left:1px solid black;
+  border-right:1px solid black;
 }
 
 .left{
   border-right:1px solid black;
-  /* border-bottom:none; */
 }
 
 .text{
@@ -93,7 +100,8 @@ body{
 .notice{
   display:grid;
   grid-template-columns:1fr 2fr;
-  /* border-bottom:1px solid black; */
+  border-left:1px solid black;
+  border-right:1px solid black;
 }
 
 .notice-text{
@@ -108,24 +116,31 @@ body{
 .features-cost{
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
-  /* border-bottom:1px solid black; */
+  border-left:1px solid black;
+  border-right:1px solid black;
 }
 
 .features{
-  padding:40px;
+  padding:20px 20px 20px 60px;
   border-right:1px solid black;
   border-bottom:1px solid black;
 }
 
+.features ul{
+  margin-left:40px;
+  margin-top:20px;
+  margin-bottom:10px;
+  list-style:square;
+}
+
 .cost{
-  padding:40px;
+  padding:20px;
   border-bottom:1px solid black;
 }
 
-.features ul{
-  margin-left:30px;
-  margin-top:20px;
-  list-style:square;
+.cost p:last-child{
+  margin-top: 2.4rem;
+  text-align: center;
 }
 
 /* ===== EMAIL ===== */
@@ -134,6 +149,8 @@ body{
   display:grid;
   grid-template-columns:1fr 2fr;
   border-bottom:1px solid black;
+  border-left:1px solid black;
+  border-right:1px solid black;
 }
 
 .email-text{
@@ -146,4 +163,24 @@ body{
 .email-text a{
   text-decoration:none;
   color:black;
+}
+
+/* ===== HOVER EFFECT ===== */
+
+.logo:hover,
+.menu:hover,
+.suggest:hover,
+.email-text:hover{
+  background:black;
+  color:white;
+  cursor:pointer;
+}
+
+.email-text a{
+  text-decoration:none;
+  color:black;
+}
+
+.email-text:hover a{
+  color:white;
 }
