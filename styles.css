@@ -59,7 +59,7 @@ body{
   display:flex;
   justify-content:flex-start;
   align-items:center;
-  padding-left:470px;
+  padding-left:550px;
 
   border-left:1px solid black;
   border-right:1px solid black;
@@ -202,7 +202,7 @@ body{
 .menu,
 .suggest{
   justify-content:flex-start;
-  padding:17px 17px 17px 20px;
+  padding:20px;
   display: flex;
   align-items: center;
 }
@@ -221,7 +221,7 @@ body{
 
 .hero{
   height:250px;
-  padding-left:40px;
+  padding-left:20px;
   display:flex;
   align-items:center;
   justify-content:flex-start;
