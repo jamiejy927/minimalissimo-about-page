@@ -55,11 +55,11 @@ body{
 /* ===== HERO ===== */
 
 .hero{
-  height:270px;
-
+  height:350px;
   display:flex;
-  justify-content:center;
+  justify-content:flex-start;
   align-items:center;
+  padding-left:470px;
 
   border-left:1px solid black;
   border-right:1px solid black;
@@ -176,11 +176,81 @@ body{
   cursor:pointer;
 }
 
-.email-text a{
-  text-decoration:none;
-  color:black;
-}
-
 .email-text:hover a{
   color:white;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width:768px){
+
+.header{
+  grid-template-columns:1fr;
+  position:static;
+}
+
+.logo{
+  border-right:none;
+  border-bottom:1px solid black;
+  padding:18px;
+}
+
+.nav{
+  grid-template-columns:1fr 1fr;
+}
+
+.menu,
+.suggest{
+  justify-content:flex-start;
+  padding:17px 17px 17px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.menu{
+  border-right:1px solid black;
+}
+
+.suggest{
+  border-right:none;
+}
+
+.left{
+  display:none;
+}
+
+.hero{
+  height:250px;
+  padding-left:40px;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+}
+
+.content,
+.notice,
+.email{
+  grid-template-columns:1fr;
+}
+
+.features-cost{
+  grid-template-columns:1fr;
+}
+
+.text{
+  padding:20px 50px;
+}
+
+.features{
+  padding:45px 30px;
+}
+
+.cost{
+  padding:25px 30px;
+}
+
+.email-text{
+  padding:40px 30px;
+}
+
 }
